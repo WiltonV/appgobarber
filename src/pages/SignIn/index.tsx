@@ -45,7 +45,6 @@ const SignIn: React.FC = () => {
     async (data: SignInFormData) => {
       try {
         formRef.current?.setErrors({});
-
         const schema = Yup.object().shape({
           email: Yup.string()
             .required('E-mail obrigatório')
